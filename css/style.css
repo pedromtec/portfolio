@@ -1,11 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: teal;
   font-family: Arial;
+  font-size: 12px;
+}
+
+@media(min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 .menu {
   background-color: white;
-  margin: 0;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu li {
@@ -15,9 +37,6 @@ body {
 .menu ul {
   display: flex;
   justify-content: space-around;
-  height: 50px;
-  align-items: center;
-  margin: 0;
 }
 
 a {
@@ -26,7 +45,12 @@ a {
 }
 
 a:hover {
-  font-size: 20px;
+  color: black;
+}
+
+.menu a {
+  display: block;
+  padding: 20px 10px;
 }
 
 .site-subtitle,
@@ -37,4 +61,14 @@ a:hover {
 
 .site-subtitle {
   font-style: italic;
+}
+
+.site-title {
+  font-size: 4em;
+}
+
+
+.img-portfolio {
+  width: 100px;
+  height: 100px;
 }
